@@ -1,0 +1,36 @@
+.live-weather {
+	display: grid;
+	grid-template-rows: 1fr 188px 136px;
+	height: inherit;
+	color: #fff;
+	padding: 24px;
+}
+
+.live-icon-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex;
+}
+
+.live-weather-icon {
+	max-width: 264px;
+}
+
+.live-temperature {
+	font-size: 96px;
+	font-weight: 500;
+}
+
+.live-location {
+	max-width: 288px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.live-highlights {
+	padding: 12px 0;
+	max-width: 288px;
+	box-sizing: border-box;
+	border-top: 1px solid #f4f6f733;
+}

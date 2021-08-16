@@ -1,0 +1,20 @@
+.live-condition {
+	max-width: 336px;
+	padding: 8px;
+	display: grid;
+	grid-template-columns: 18px 1fr 56px;
+	align-items: center;
+	grid-gap: 8px;
+}
+
+.live-condition-icon {
+	text-align: center;
+}
+
+.live-condition-title {
+	text-align: left;
+}
+
+.live-condition-value {
+	text-align: right;
+}
