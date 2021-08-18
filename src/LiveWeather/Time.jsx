@@ -1,16 +1,7 @@
 import React, { Component } from "react";
-import { padStart } from "lodash";
 import { PropTypes } from "prop-types";
-
-const DAYS_LIBRARY = [
-	"Sunday",
-	"Monday",
-	"Tuesday",
-	"Wednesday",
-	"Thursday",
-	"Friday",
-	"Saturday",
-];
+import { padStart } from "lodash";
+import { DAYS_LIBRARY } from '../utils';
 
 class Time extends Component {
 	state = { date: null, loading: true };

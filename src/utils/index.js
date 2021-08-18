@@ -69,5 +69,15 @@ export const mapToCondition = (code) => {
 	return matchedCondition ? matchedCondition.description : null;
 };
 
+export const DAYS_LIBRARY = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday",
+];
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default { mapToCurrent, mapToLocation, mapToCondition };
