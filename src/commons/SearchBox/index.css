@@ -1,0 +1,29 @@
+.search-box {
+	background-color: #fff;
+	box-sizing: border-box;
+	border-radius: 8px;
+	height: 48px;
+	width: 368px;
+	padding: 0 12px;
+	display: grid;
+	color: #858585;
+	grid-template-columns: 24px 1fr;
+	align-items: center;
+	grid-gap: 4px;
+}
+
+.search-input {
+	font-size: 18px;
+	line-height: 18px;
+	/* height: inherit; */
+}
+
+.search-input,
+.search-input:focus {
+	border: none;
+	outline: none;
+}
+
+.search-icon {
+	font-size: 16px;
+}

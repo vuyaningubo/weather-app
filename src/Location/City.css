@@ -1,0 +1,43 @@
+.location-city {
+	width: 192px;
+	height: 64px;
+	color: #fff;
+	border-radius: 12px;
+	padding: 4px 12px;
+	display: grid;
+	grid-template-columns: 1fr 46px;
+	align-items: center;
+	grid-gap: 8px;
+	cursor: pointer;
+}
+
+.location-city:nth-child(1) {
+	background-color: #4f6796;
+}
+
+.location-city:nth-child(2) {
+	background-color: #20b2bb;
+}
+
+.location-city-condition {
+	display: flex;
+	align-items: center;
+}
+
+.location-city-condition-description {
+	width: 90px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.location-city-name {
+	width: 114px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.location-city-icon {
+	width: 24px;
+}

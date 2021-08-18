@@ -1,0 +1,18 @@
+.result {
+	height: 40px;
+	padding: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 8px;
+	cursor: pointer;
+	background-color: #e3f6fe;
+}
+
+.search-result-city {
+	width: 260px;
+	font-weight: 600;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

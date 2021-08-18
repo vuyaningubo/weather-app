@@ -1,0 +1,18 @@
+.location-new-city {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	color: #a4a6ac;
+}
+
+.location-new-city-square {
+	height: 64px;
+	width: 96px;
+	border: 1px solid #a4a6ac;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.location {
+	position: relative;
+}
+
+.cities {
+	padding: 18px 0;
+	display: flex;
+	gap: 8px;
+}
