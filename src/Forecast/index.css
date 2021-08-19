@@ -30,7 +30,7 @@
 }
 
 .weather-forecast-conatiner {
-	height: 320px;
+	height: 280px;
 	overflow-y: scroll;
 	position: relative;
 }

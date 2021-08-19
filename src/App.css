@@ -16,6 +16,7 @@
 }
 
 .App {
+	min-width: 880px;
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 336px 1fr;
