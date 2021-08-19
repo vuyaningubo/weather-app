@@ -7,18 +7,51 @@ export const mapToCurrent = (data) => {
 	const {
 		is_day: isDay,
 		condition: { code },
-		temp_c: temperature,
+		temp_c,
 		cloud: cloudCover,
 		precip_mm: precipitation,
-		feelslike_c: feelsLike,
+		feelslike_c,
 	} = data;
 	return {
 		isDay: Boolean(isDay),
 		code,
-		temperature: Math.round(temperature),
+		temperature: Math.round(temp_c),
 		cloudCover,
 		precipitation,
-		feelsLike: Math.round(feelsLike),
+		feelsLike: Math.round(feelslike_c),
+	};
+};
+
+export const mapToForecast = (data) => {
+	const { forecastday: days } = data;
+	const forecast = days.map((day) => mapToDay(day));
+	return forecast;
+};
+
+const mapToDay = (data) => {
+	const { date: dateString, hour: hours } = data;
+	const date = new Date(dateString);
+	const hourly = hours.map((hour) => mapToHour(hour));
+	return { date, hourly };
+};
+
+const mapToHour = (data) => {
+	const {
+		time: dateString,
+		is_day,
+		chance_of_rain: chanceOfRain,
+		condition: { code, text: description },
+		temp_c,
+	} = data;
+	const time = new Date(dateString);
+	const condition = { code, description };
+
+	return {
+		time,
+		isDay: Boolean(is_day),
+		temperature: Math.round(temp_c),
+		chanceOfRain,
+		condition,
 	};
 };
 

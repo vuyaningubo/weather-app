@@ -1,0 +1,42 @@
+.hourly-weather {
+	min-width: 480px;
+	max-width: 640px;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.hour-condition-icon {
+	width: 32px;
+	height: 32px;
+}
+
+.hour-content {
+	display: grid;
+	grid-template-columns: 2fr 2fr 3fr 3fr;
+	align-items: center;
+}
+
+.hour-chance-of-rain,
+.hour-condition {
+	gap: 8px;
+	display: flex;
+	align-items: center;
+}
+
+.rain-drop {
+	color: #3472db;
+}
+
+.hour-temperature {
+	display: flex;
+	align-items: center;
+	text-align: right;
+	padding: 0 18px;
+	gap: 8px;
+}
+
+.hour-temperature-value {
+	width: 32px;
+}

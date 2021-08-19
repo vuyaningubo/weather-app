@@ -1,0 +1,15 @@
+.temperature-graphic {
+	position: relative;
+	border-radius: 8px;
+	width: 100%;
+	height: 8px;
+	background-color: #a1cdff;
+}
+
+.temperature-graphic-value {
+	position: absolute;
+	right: 0;
+	height: 8px;
+	border-radius: 8px;
+	background-color: #eb4a0c;
+}

@@ -1,0 +1,36 @@
+.weather-forecast-title {
+	padding: 12px 0;
+}
+
+.forecast-selector {
+	color: #a4a6ac;
+	display: flex;
+	gap: 24px;
+}
+
+.selector-period {
+	cursor: pointer;
+	padding: 12px 0;
+}
+
+.selected-period {
+	color: #1e1714;
+	position: relative;
+}
+
+.selected-period::after {
+	content: "";
+	background-color: #1e1714;
+	position: absolute;
+	border-radius: 4px;
+	height: 4px;
+	width: 4px;
+	bottom: 0;
+	left: 50%;
+}
+
+.weather-forecast-conatiner {
+	height: 320px;
+	overflow-y: scroll;
+	position: relative;
+}

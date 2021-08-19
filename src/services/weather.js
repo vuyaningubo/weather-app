@@ -12,7 +12,7 @@ export function getCurrent(query) {
 }
 
 export function getForecast(query) {
-	return instance.get(`forecast.json?q=${query}`);
+	return instance.get(`forecast.json?q=${query}&days=10`);
 }
 
 // eslint-disable-next-line import/no-anonymous-default-export
